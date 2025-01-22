@@ -3,96 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DormMatch</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="css/stylesdorm.css">
 </head>
-<body>
-    <header>
-        <nav class="navbar">
+<body class="forgot-password-body">
+    <div class="forgot-password-container">
+        <div class="forgot-password-form">
             <div class="logo">
-                <img src="images/logo.png" alt="DormMatch Logo">
+                <img src="images/logo.png" alt="Dorm Match Logo">
             </div>
-            <ul class="nav-links">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="waitlist.html">Waitlist</a></li>
-                <li><a href="solodorm.html">Solo Dorm</a></li>
-                <li><a href="aboutus.html">About Us</a></li>
-            </ul>
-            <div class="auth-buttons">
-                <button class="login-btn">Log in</button>
-                <button class="signup-btn">Sign up</button>
-            </div>
-        </nav>
-    </header>    
-
-    <main>
-        <section class="hero">
-            <h1>Welcome to DormMatch!</h1>
-            <p>
-                DormMatch is a platform designed to ensure a stress-free booking experience, simplifying the roommate selection process with a waitlisting feature while prioritizing students’ needs and convenience.
-            </p>
-        </section>
-
-        <section class="dorm-types">
-            <div class="dorm-row">
-                <div class="dorm-box">
-                    <img src="images/class-a-shared.jpg" alt="Class A Shared Dorm">
-                    <div class="card-content">
-                        <h2>Class A Shared Dorm</h2>
-                        <p>40 square meters room is divided into four sections, each with a bed, and featuring two bathrooms, and a balcony.</p>
-                        <p><strong>Price:</strong> ₱18,000.00</p>
-                        <p><strong>Capacity:</strong> 4</p>
-                    </div>
+            <h1>Forgot Password</h1>
+            <p>Please enter your email address to reset your password.</p>
+            <form action="#">
+                <div class="input-container">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
                 </div>
-                <div class="dorm-box">
-                    <img src="images/class-b-shared.png" alt="Class B Shared Dorm">
-                    <div class="card-content">
-                        <h2>Class B Shared Dorm</h2>
-                        <p>35 square meters room divided into four sections, each with a bed, and featuring two bathrooms.</p>
-                        <p><strong>Price:</strong> ₱14,000.00</p>
-                        <p><strong>Capacity:</strong> 4</p>
-                    </div>
-                </div>
-            </div>
-            <div class="dorm-row">
-                <div class="dorm-box">
-                    <img src="images/class-a-solo.jpg" alt="Class A Solo Dorm">
-                    <div class="card-content">
-                        <h2>Class A Solo Dorm</h2>
-                        <p>40 square meters room with a private bathroom and balcony.</p>
-                        <p><strong>Price:</strong> ₱16,000.00</p>
-                        <p><strong>Capacity:</strong> 1</p>
-                    </div>
-                </div>
-                <div class="dorm-box">
-                    <img src="images/class-b-solo.jpg" alt="Class B Solo Dorm">
-                    <div class="card-content">
-                        <h2>Class B Solo Dorm</h2>
-                        <p>35 square meters room with a private bathroom.</p>
-                        <p><strong>Price:</strong> ₱12,000.00</p>
-                        <p><strong>Capacity:</strong> 1</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="mission-vision">
-            <h2>Mission and Vision</h2>
-            <p>
-                To revolutionize student housing in Sta. Mesa by creating an innovative, user-friendly dormitory reservation system that ensures seamless access, 
-                unparalleled convenience, and a supportive community environment. Our long-term objective is to become the go-to platform for students seeking 
-                reliable, modern, and secure accommodations, fostering a vibrant community that enhances the overall student experience and success.
-            </p>
-            <p>
-                Our mission is to provide a streamlined and efficient dormitory reservation system that prioritizes student needs through modern technology and a 
-                transparent waitlist feature. We aim to achieve this by enhancing accessibility, ensuring reliability, and prioritizing convenience.
-            </p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 DormMatch. All rights reserved.</p>
-    </footer>
+                <button type="submit" class="forgot-password-btn">Reset Password</button>
+            </form>
+            <a href="login.html" class="back-to-login">Back to Login</a>
+        </div>
+    </div>
 </body>
 </html>
