@@ -82,7 +82,221 @@ body {
     background: #001540;
 }
 
-/* Styles specific to the Solo Dorm page */
+/* General Body Styling for Login and Signup */
+.signup-body, .login-body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e6f0fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    box-sizing: border-box;
+    overflow-y: auto; 
+}
+
+h1 {
+    color: #1b4a7c;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Container and Box Styles */
+.signup-container, .login-container {
+    margin: 20px;
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.login-box, .signup-box {
+    width: 100%;
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+/* Form Styles */
+form {
+    margin-top: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+input[type="date"],
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #aaaaaa;
+}
+
+/* Button Styles */
+button {
+    background-color: #1b4a7c;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #155082;
+}
+
+/* Link Styles */
+.forgot-password a,
+.signup-link a {
+    color: #1b4a7c;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.signup-link {
+    margin-top: 20px;
+}
+
+.signup-link a:hover,
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+/* Specific to Signup Page */
+.row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.row .form-group {
+    flex: 1;
+}
+
+/* Forgot Password Styles */
+.forgot-password-body {
+    background-color: #e9f2ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.forgot-password-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    padding: 20px 30px;
+    text-align: center;
+}
+
+.forgot-password-form .logo img {
+    max-width: 150px;
+    margin: 0 auto 20px;
+}
+
+.forgot-password-form h1 {
+    color: #003366;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.forgot-password-form p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.input-container {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-container label {
+    font-size: 0.9rem;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input-container input:focus {
+    border-color: #0056b3;
+}
+
+.forgot-password-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #1b4a7c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.forgot-password-btn:hover {
+    background-color: #003d80;
+}
+
+.back-to-login {
+    display: block;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #0056b3;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.back-to-login:hover {
+    color: #003d80;
+}
+
+/* Styles specific to the Dorm page */
 .main-container {
     display: flex;
     justify-content: center;
@@ -206,7 +420,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height for centering */
+    height: 100vh; 
     background: linear-gradient(to bottom, #d3ebfb, #abd3f6);
 }
 
@@ -550,7 +764,7 @@ h3 {
 }
 
 .status.pending {
-    background-color: #ffc107;
+    background-color: #0056b3;
     color: #ffffff;
 }
 
