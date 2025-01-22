@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Profile</title>
+    <link rel="stylesheet" href="css/stylesdorm.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="DormMatch Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="waitlist.html">Waitlist</a></li>
+                <li><a href="solodorm.html">Solo Dorm</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+            <div class="profile">
+                <img src="images/profile-pic.png" alt="User Profile Picture" class="profile-pic">
+                <span>Rafael Choi</span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="bookings-section">
+            <h2 class="section-title">My Bookings</h2>
+            <div class="current-booking">
+                <h3>Current Booking Status</h3>
+                <div class="booking-card">
+                    <img src="images/profile-pic.png" alt="User" class="booking-avatar">
+                    <div class="booking-details">
+                        <p><strong>Dorm Type:</strong> Class A Shared Dorm</p>
+                        <p><strong>Date Booked:</strong> September 15, 2024</p>
+                    </div>
+                    <div class="booking-actions">
+                        <button class="status pending">PENDING</button>
+                        <button class="cancel-btn">CANCEL</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="booking-history">
+                <h3>Booking History</h3>
+                <div class="booking-card">
+                    <img src="images/profile-pic.png" alt="User" class="booking-avatar">
+                    <div class="booking-details">
+                        <p><strong>Dorm Type:</strong> Class B Solo Dorm</p>
+                        <p><strong>Date Booked:</strong> January 10, 2024</p>
+                    </div>
+                    <button class="status confirmed">CONFIRMED</button>
+                </div>
+                <div class="booking-card">
+                    <img src="images/profile-pic.png" alt="User" class="booking-avatar">
+                    <div class="booking-details">
+                        <p><strong>Dorm Type:</strong> Class B Shared Dorm</p>
+                        <p><strong>Date Booked:</strong> August 12, 2023</p>
+                    </div>
+                    <button class="status cancelled">CANCELLED</button>
+                </div>
+                <div class="booking-card">
+                    <img src="images/profile-pic.png" alt="User" class="booking-avatar">
+                    <div class="booking-details">
+                        <p><strong>Dorm Type:</strong> Class A Shared Dorm</p>
+                        <p><strong>Date Booked:</strong> July 20, 2023</p>
+                    </div>
+                    <button class="status cancelled">CANCELLED</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 DormMatch. All rights reserved.</p>
+    </footer>
+</body>
+</html>
